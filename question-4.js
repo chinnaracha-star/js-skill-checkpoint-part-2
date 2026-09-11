@@ -38,15 +38,15 @@ const allEmployees = [
 console.log(allEmployees);
 
 // let x = [];
-const result = allEmployees.filter((employee) => {
-  return employee.department === "Enginring" && employee.age >= 20;
+const filteredEmployees = allEmployees.filter((employee) => {
+  return employee.department === "Engineering" && employee.age >= 20;
 });
-console.log(result);
+console.log(filteredEmployees);
 
-allEmployees.map((employee) => {
+const result = filteredEmployees.map((employee) => {
   return {
     name: employee.name,
-    company: "",
+    company: employee.company,
   };
 });
 
