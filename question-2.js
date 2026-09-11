@@ -18,4 +18,4 @@ console.log(up10per);
 let totalScore = up10per.reduce((acc, cur) => acc + cur, 0);
 console.log(totalScore);
 
-console.log(`"Total score is ${totalScore}"`);
+console.log(`"Total score is ${totalScore.toFixed(1)}"`);
